@@ -265,7 +265,7 @@ function ScrapUpcoming() {
                     //Add datas into embed fields
                     const productEmbed = new Discord.MessageEmbed()
                         //Set Message Author
-                        .setAuthor(`${process.env.SITE_NAME} (${process.env.CATEGORY_NAME_NEW})`, `${process.env.BRANDING_LOGO}`, `${UpcomingProducts[i].link}`)
+                        .setAuthor(`${process.env.SITE_NAME}`, `${process.env.SITE_LOGO}`, `${UpcomingProducts[i].link}`)
                         //Set message color
                         .setColor(`${process.env.COLOR}`)
                         //Set message title
@@ -274,16 +274,6 @@ function ScrapUpcoming() {
                         .setURL(`${UpcomingProducts[i].link}`)
                         //Set Fields
                         .addFields(
-                            { 
-                                name: 'Site:', 
-                                value: `${process.env.SITE_NAME}`, 
-                                inline:true 
-                            },
-                            { 
-                                name: 'Category:', 
-                                value: `${process.env.CATEGORY_NAME_NEW}`, 
-                                inline:true 
-                            },
                             { 
                                 name: 'Region:', 
                                 value: `${process.env.REGION_SHOP}`, 
@@ -335,8 +325,8 @@ function ScrapUpcoming() {
                                 inline:false
                             },
                             { 
-                                name: 'Other Links:', 
-                                value: "[Cart]"+"(https://www.nike.com/cart)" + " | " + "[StockX]" + "(https://stockx.com/search?s="+ UpcomingProducts[i].style_code +")" +" | " + "[eBay]" + "(https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2499334.m570.l1313&_nkw="+UpcomingProducts[i].style_code+")" +" | " + "[Goat]" + "(https://www.goat.com/search?query="+UpcomingProducts[i].style_code+"&_sacat=0)" 
+                                name: 'Wuick Links:', 
+                                value: "[Upcoming]"+"(https://www.nike.com/in/launch?s=upcoming)" + " | " + "[StockX]" + "(https://stockx.com/search?s="+ UpcomingProducts[i].style_code +")" +" | " + "[Goat]" + "(https://www.goat.com/search?query="+UpcomingProducts[i].style_code+"&_sacat=0)" + ' | ' + '[DEV](https://www.instagram.com/adityasanehi/)'
                             }
                         )
                         //Set timestamp
