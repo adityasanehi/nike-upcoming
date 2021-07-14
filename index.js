@@ -326,7 +326,7 @@ function ScrapUpcoming() {
                             },
                             { 
                                 name: 'Wuick Links:', 
-                                value: "[Upcoming]"+"(https://www.nike.com/in/launch?s=upcoming)" + " | " + "[StockX]" + "(https://stockx.com/search?s="+ UpcomingProducts[i].style_code +")" +" | " + "[Goat]" + "(https://www.goat.com/search?query="+UpcomingProducts[i].style_code+"&_sacat=0)" + ' | ' + '[DEV](https://www.instagram.com/adityasanehi/)'
+                                value: "[Upcoming]"+"(https://www.nike.com/in/launch?s=upcoming)" + " | " + "[StockX]" + "(https://stockx.com/search?s="+ UpcomingProducts[i].style_code +")" +" | " + "[Goat]" + "(https://www.goat.com/search?query="+UpcomingProducts[i].style_code+"&_sacat=0)" + ' | ' + '[Support](https://www.instagram.com/yaleearkash7/)'
                             }
                         )
                         //Set timestamp
